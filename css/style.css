@@ -1,39 +1,37 @@
 
 #wrapper{
   margin: 40px;
-  padding-left: 50px;
   padding-top: 20px;
 }
 
 
 body {
-background-color: #242021;
-color:rgba(250, 250, 250, .8);
+  margin: 0;
+  background-color: #242021;
+  color:rgba(250, 250, 250, .8);
 }
 
 
 
 
 .navbar {
-  overflow: hidden;
+  text-align: center;
   background-color: #2F4562;
   position: fixed;
   top: 0;
-  width: 110px;
+  width: 100%;
   z-index: 1;
-
 }
 
 
-.navbar a{
-  float: left;
-  font-size: 10px;
-  padding-bottom: 3px;
+.navbar ul li a{
+  padding-left: 15px;
+  padding-right: 15px;
+  text-decoration: none;
 }
 
 .navbar ul li{
   display: inline-block;
-  list-style-type: none;
 }
 
 
