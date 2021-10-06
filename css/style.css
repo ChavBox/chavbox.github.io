@@ -1,17 +1,22 @@
 
 #wrapper{
-  margin: 40px;
+  margin: 15%;
   padding-top: 20px;
 }
 
 
 body {
+  font-family: Times, sans-serif;
+  font-size: 20px;
   margin: 0;
   background-color: #242021;
   color:rgba(250, 250, 250, .8);
 }
 
-
+#overview, #losingInfo, #linkedInfo, #trees, #keyWords, #hypertext, #requirements,
+#accessingExistingData, #conclusion{
+  padding-top: 10px;
+}
 
 
 .navbar {
@@ -51,6 +56,10 @@ background-color: #5c3d3d;
 color:rgba(250, 250, 250, .6);
 margin-left: auto;
 margin-right: auto;
+}
+
+#tableSpace{
+  padding: 20px;
 }
 
 a{
