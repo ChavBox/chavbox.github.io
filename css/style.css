@@ -1,9 +1,17 @@
 
 #wrapper{
+  padding-top: 20px;
   margin-left: 15%;
   margin-right: 15%;
 }
 
+#tableSpace{
+  padding: 30px;
+}
+
+#fig1{
+  max-width: 70%;
+}
 
 body {
   font-family: Times, sans-serif;
