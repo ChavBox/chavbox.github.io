@@ -1,6 +1,6 @@
 body{
   background-color: #242021;
-
+  overflow: hidden;
 }
 
 #wrapper{
@@ -8,6 +8,20 @@ body{
   height: 698px;
   width: 698px;
   z-index: 10;
+}
+
+#home{
+  text-decoration: none;
+  background-color: #2F4562;
+  color: #8ab4f8;
+  padding: 14px 25px;
+  text-align: center;
+  display: inline-block;
+  position: absolute;
+  z-index: 20;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -10%);
 }
 
 #top{
@@ -69,6 +83,7 @@ body{
   height: 700px;
   position: absolute;
   background-color: #27221F;
+  animation:black 10s infinite;
 }
 
 #red{
@@ -79,6 +94,7 @@ body{
   height: 700px;
   background-color: #B81F11;
   position: absolute;
+  animation:red 10s infinite;
 }
 
 #blue{
@@ -90,6 +106,7 @@ body{
   position: absolute;
   background-color: #A0A4AF;
   transform: rotate(45deg);
+  animation:blue 10s infinite;
 }
 
 #white1{
@@ -101,6 +118,7 @@ body{
   left: -80px;
   top: -117px;
   transform: rotate(45deg);
+  animation:white 10s infinite;
 }
 
 #grey{
@@ -112,6 +130,7 @@ body{
   transform: rotate(45deg);
   right: 5px;
   top: -215px;
+  animation:grey 10s infinite;
 }
 
 #blue2{
@@ -123,6 +142,7 @@ body{
   bottom: -199px;
   left: 76px;
   transform: rotate(45deg);
+  animation:blue2 10s infinite;
 }
 
 #white2{
@@ -134,6 +154,7 @@ body{
   bottom: -196px;
   left: -196px;
   transform: rotate(45deg);
+  animation:white 10s infinite;
 }
 
 #yellow{
@@ -145,4 +166,55 @@ body{
   bottom: 42px;
   left: -106px;
   transform: rotate(45deg);
+  animation:yellow 10s infinite;
+}
+
+
+@keyframes black{
+  0% {background-color: #242021;}
+  40% {background-color: #dbdfde;}
+  60% {background-color: #dbdfde;}
+  100% {background-color: #242021;}
+}
+
+@keyframes red{
+  0% {background-color: #B81F11;}
+  40% {background-color: #47e0ee;}
+  60% {background-color: #47e0ee;}
+  100% {background-color: #B81F11;}
+}
+
+@keyframes grey{
+  0% {background-color: #6C6364;}
+  40% {background-color: #939c9b;}
+  60% {background-color: #939c9b;}
+  100% {background-color: #6C6364;}
+}
+
+@keyframes blue{
+  0% {background-color: #A0A4AF;}
+  40% {background-color: #5f5b50;}
+  60% {background-color: #5f5b50;}
+  100% {background-color: #A0A4AF;}
+}
+
+@keyframes blue2{
+  0% {background-color: #AFB2B7;}
+  40% {background-color: #504d48;}
+  60% {background-color: #504d48;}
+  100% {background-color: #AFB2B7;}
+}
+
+@keyframes white{
+  0% {background-color: #D4CAC1;}
+  40% {background-color: #2b353e;}
+  60% {background-color: #2b353e;}
+  100% {background-color: #D4CAC1;}
+}
+
+@keyframes yellow{
+  0% {background-color: #C9A23D;}
+  40% {background-color: #365dc2;}
+  60% {background-color: #365dc2;}
+  100% {background-color: #C9A23D;}
 }
