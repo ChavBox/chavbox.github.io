@@ -1,6 +1,5 @@
 body{
   background-color: #242021;
-  overflow: hidden;
 
 }
 
@@ -8,7 +7,6 @@ body{
   position: absolute;
   height: 698px;
   width: 698px;
-  border: 1px solid black;
   z-index: 10;
 }
 
@@ -24,7 +22,7 @@ body{
 
 #left{
   position: absolute;
-  left: -600px;
+  left: -598px;
   top: -150px;
   height: 1000px;
   width: 600px;
@@ -71,7 +69,6 @@ body{
   height: 700px;
   position: absolute;
   background-color: #27221F;
-  border: 1px solid black;
 }
 
 #red{
@@ -104,7 +101,6 @@ body{
   left: -80px;
   top: -117px;
   transform: rotate(45deg);
-  border: 1px solid black;
 }
 
 #grey{
@@ -116,7 +112,6 @@ body{
   transform: rotate(45deg);
   right: 5px;
   top: -215px;
-  border: 1px solid black;
 }
 
 #blue2{
@@ -133,11 +128,11 @@ body{
 #white2{
   position: absolute;
   z-index: 3;
-  height: 200px;
-  width: 200px;
+  height: 392px;
+  width: 392px;
   background-color: #D4CAC1;
-  bottom: -100px;
-  left: 38px;
+  bottom: -196px;
+  left: -196px;
   transform: rotate(45deg);
 }
 
@@ -147,8 +142,7 @@ body{
   height: 200px;
   width: 200px;
   background-color: #C9A23D;
-  bottom: 40px;
-  left: -104px;
+  bottom: 42px;
+  left: -106px;
   transform: rotate(45deg);
-  border: 1px solid black;
 }
