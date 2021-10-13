@@ -3,13 +3,6 @@ body{
   overflow: hidden;
 }
 
-#wrapper{
-  position: absolute;
-  height: 698px;
-  width: 698px;
-  z-index: 10;
-}
-
 #home{
   text-decoration: none;
   background-color: #2F4562;
@@ -85,6 +78,9 @@ body{
   background-color: #27221F;
   animation:black 10s infinite;
 }
+#black:hover{
+  z-index: 100;
+}
 
 #red{
   z-index: 0;
@@ -95,6 +91,9 @@ body{
   background-color: #B81F11;
   position: absolute;
   animation:red 10s infinite;
+}
+#red:hover{
+  z-index: 100;
 }
 
 #blue{
@@ -108,6 +107,9 @@ body{
   transform: rotate(45deg);
   animation:blue 10s infinite;
 }
+#blue:hover{
+  z-index: 100;
+}
 
 #white1{
   background-color: #D4CAC1;
@@ -119,6 +121,9 @@ body{
   top: -117px;
   transform: rotate(45deg);
   animation:white 10s infinite;
+}
+#white1:hover{
+  z-index:100;
 }
 
 #grey{
@@ -132,6 +137,9 @@ body{
   top: -215px;
   animation:grey 10s infinite;
 }
+#grey:hover{
+  z-index:100;
+}
 
 #blue2{
   position: absolute;
@@ -143,6 +151,9 @@ body{
   left: 76px;
   transform: rotate(45deg);
   animation:blue2 10s infinite;
+}
+#blue2:hover{
+  z-index:100;
 }
 
 #white2{
@@ -156,6 +167,9 @@ body{
   transform: rotate(45deg);
   animation:white 10s infinite;
 }
+#white2:hover{
+  z-index:100;
+}
 
 #yellow{
   position: absolute;
@@ -167,6 +181,9 @@ body{
   left: -106px;
   transform: rotate(45deg);
   animation:yellow 10s infinite;
+}
+#yellow:hover{
+  z-index:100;
 }
 
 
