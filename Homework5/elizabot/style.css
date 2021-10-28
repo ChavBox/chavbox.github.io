@@ -1,0 +1,26 @@
+body{
+  margin: 0;
+  background-image: url(background.jpg);
+  background-size: 100%;
+  text-align: center;
+}
+
+#input{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform:translate(-50%, -50%);
+}
+
+#form{
+  min-width: 600px;
+}
+
+#name{
+  position: absolute;
+  background-color: white;
+  width: 400px;
+  top: 200px;
+  left: 50%;
+  transform: translate(-50%);
+}
