@@ -19,26 +19,30 @@ a{
 }
 
 #hw0{
-  transform: translate(-50%, -300px);
+  transform: translate(-200px, -300px);
 }
 
 #hw1{
-  transform: translate(-50%, -200px);
+  transform: translate(-200px, -200px);
 
 }
 
 #hw2{
-  transform: translate(-50%, -100px);
+  transform: translate(-200px, -100px);
 }
 
 #hw3{
-    transform: translate(-50%, 0px);
+    transform: translate(-200px, 0px);
 }
 
 #hw4{
-  transform: translate(-50%, 100px);
+  transform: translate(-200px, 100px);
 }
 
 #hw5{
-  transform: translate(-50%, 200px);
+  transform: translate(-200px, 200px);
+}
+
+#hw6{
+  transform: translate(0, -300px);
 }
