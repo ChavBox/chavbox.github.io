@@ -133,9 +133,12 @@ function draw(){
       d: diameter
     };
     if(coords.length == 0){
-      circle(x, y, diameter);
-      coords.push(ship);
       var temp = crafts[i].passList;
+      circle(x, y, diameter);
+      textSize(32);
+      fill(0);
+      text(crafts[i].name, x, y-diameter/2 + 30);
+      coords.push(ship);
       drawPeople(temp, x, y, diameter);
       fill(153,69,32);
     }else{
@@ -156,6 +159,10 @@ function draw(){
       }
 
       circle(x, y, diameter);
+      textSize(18);
+      fill(0);
+      var name = crafts[i].name
+      text(name, x-name.length*5, y-diameter/2 + 30);
       coords.push(ship);
       drawPeople(passList, x, y, diameter);
       fill(153,69,32);
