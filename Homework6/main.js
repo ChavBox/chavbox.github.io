@@ -15,7 +15,7 @@ var w = window.innerWidth;
 var h = window.innerHeight;
 var craftLocation = [];
 
-$.getJSON('http://api.open-notify.org/astros.json?callback=?', function(data) {
+$.getJSON('./data/astros.json', function(data) {
     data['people'].forEach(function (d) {
       const ship = new Craft(d['craft']);
       ship.addPass(d['name'])
