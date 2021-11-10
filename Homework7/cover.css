@@ -52,10 +52,9 @@ body {
   border-bottom-color: #fff;
 }
 
-.px-3{
-  transition: all 2s ease;
-}
-
+/*
+Move the button to the bottom of the window
+*/
 #next{
   position: absolute;
   left: 50%;
