@@ -59,6 +59,6 @@ body {
 #next{
   position: absolute;
   left: 50%;
-  bottom: 100px;
+  bottom: 20px;
   transform: translate(-50%);
 }
