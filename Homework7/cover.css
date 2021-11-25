@@ -51,3 +51,13 @@ body {
   color: #fff;
   border-bottom-color: #fff;
 }
+
+/*
+Move the button to the bottom of the window
+*/
+#next{
+  position: absolute;
+  left: 50%;
+  bottom: 20px;
+  transform: translate(-50%);
+}
