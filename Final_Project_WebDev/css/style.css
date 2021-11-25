@@ -1,0 +1,79 @@
+body{
+    width: 100%;
+    background-color: #242021;
+    margin: 0;
+}
+
+img{
+    z-index: 0;
+}
+
+span{
+    background-color: white;
+    color: black;
+}
+
+span:hover{
+    cursor: pointer;
+}
+
+#wrapper{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    width: 970px;
+}
+
+.line{
+    width: 125px;
+    height: 2px;
+    background-color: white;
+    position: absolute;
+    z-index: 5;
+}
+
+.label{
+    position: absolute;
+    height: 20px;
+    width: 100px;
+    z-index: 10;
+}
+
+.pic{
+    z-index: 0;
+}
+
+#capShape{
+    transform: rotate(-30deg);
+    left: 56%
+}
+
+#shape{
+    right: 27%;
+    top: -9%;
+}
+
+#capSurface{
+    left: 30%;
+    top: 0;
+    transform: rotate(69deg);
+}
+
+#surface{
+    transform: translate(-40px, -75px);
+}
+
+#capColor{
+    transform: rotate(90deg);
+    left: 45%;
+    width: 60px;
+    top: -3%
+}
+
+#color{
+    left: 43%;
+    top: -10%;
+}
