@@ -1,79 +1,64 @@
 body{
+    height: 100%;
     width: 100%;
     background-color: #242021;
+    color: rgba(255, 255, 255, 0.8);
     margin: 0;
 }
 
-img{
-    z-index: 0;
+#nav{
+    display: block;
+    background-color: #5F9EA0;
+    position: relative;
+    top: 0;
+    height: 110px;
+    width: 100%;
 }
 
-span{
-    background-color: white;
-    color: black;
+#nav ul{
+    text-align: center;
+    width: 80%;
+    position: absolute;
+    list-style-type: none;
+    left: 50%;
+    top: 35%;
+    transform: translate(-50%, -50%);
 }
 
-span:hover{
-    cursor: pointer;
+#nav ul li{
+    display: inline-block;
+}
+
+#nav ul li a{
+    text-decoration: none;
+    border-radius: 50%;
+    margin-top: 20px;
+    margin-left: 40px;
+    margin-right: 40px;
+    padding: 10px;
+    background: #FCEF91;
+}
+
+#nav ul li a:hover{
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+
+#homePic{
+    padding: 50px;
+    position: relative;
+    width: 400px;
+    height: 300px;
+
 }
 
 #wrapper{
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
     text-align: center;
-    color: white;
-    width: 970px;
+    width: 100%;
+    height: 100%;
 }
 
-.line{
-    width: 125px;
-    height: 2px;
-    background-color: white;
-    position: absolute;
-    z-index: 5;
-}
-
-.label{
-    position: absolute;
-    height: 20px;
-    width: 100px;
-    z-index: 10;
-}
-
-.pic{
-    z-index: 0;
-}
-
-#capShape{
-    transform: rotate(-30deg);
-    left: 56%
-}
-
-#shape{
-    right: 27%;
-    top: -9%;
-}
-
-#capSurface{
-    left: 30%;
-    top: 0;
-    transform: rotate(69deg);
-}
-
-#surface{
-    transform: translate(-40px, -75px);
-}
-
-#capColor{
-    transform: rotate(90deg);
-    left: 45%;
-    width: 60px;
-    top: -3%
-}
-
-#color{
-    left: 43%;
-    top: -10%;
+main{
+    padding-top: 100px;
 }
