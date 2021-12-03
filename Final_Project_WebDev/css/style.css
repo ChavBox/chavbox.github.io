@@ -1,5 +1,6 @@
 body{
     background-image: url("../photos/forest.jpg");
+    background-repeat: no-repeat;
     background-size: cover;
     height: 100%;
     width: 100%;
@@ -95,6 +96,9 @@ main{
 }
 
 .button{
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
     width: 100px;
     background-color: red;
     padding: 10px;
