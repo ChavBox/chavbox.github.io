@@ -8,6 +8,13 @@ body{
     margin: 0;
 }
 
+ul{
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    width: 30%;
+}
+
 #nav{
     display: block;
     background-image: linear-gradient(to bottom right,  #043927  ,  #18453B,  #043927);
@@ -41,7 +48,11 @@ body{
     transition: 500ms;
 }
 
-a:visited{
+#nav a:link{
+    color: black;
+}
+
+#nav a:visited{
     color: black;
 }
 
@@ -95,16 +106,44 @@ main{
     padding: 10px;
 }
 
+.prow{
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    padding 0 4px;
+}
+
+.pcol{
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+}
+
+.pcol img{
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+}
+
 .button{
     position: relative;
     left: 50%;
     transform: translate(-50%);
     width: 100px;
-    background-color: red;
+    background-color: #800000;
     padding: 10px;
     border-radius: 25%;
 }
 
 .button:hover{
     cursor: pointer;
+}
+
+#label1{
+    position: relative;
+    top: 80px;
+}
+
+iframe{
+    border: none;
 }
