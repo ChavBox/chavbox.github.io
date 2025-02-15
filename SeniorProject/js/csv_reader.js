@@ -1,6 +1,6 @@
 // Fetch the drug list data and insert into the HTML list
 function fillDrugList() {
-    let data = fetch("./assets/finalTest.csv")
+    let data = fetch("../assets/drugDetails.csv")
                 .then(response => response.text())
                 .then(data => {
                     // Now we have the data
@@ -17,9 +17,22 @@ function fillDrugList() {
                 })
 }
 
+// Inserts links based on drug names into text
+// This process is computationally inefficient, but requires no special formatting in the data
+function insertLinks(text, names, self) {
+    // Loop through drug names and create links
+    for (let i = 0; i < names.length; i++) {
+        if (text.toLowerCase().includes(names[i].toLowerCase()) && names[i] != self) {
+            text = text.replaceAll(names[i], "<a href='detail.html?item=" + names[i] + "'>" + names[i] + "</a>")
+        }
+    }
+
+    return text
+}
+
 // Fetch data for a specific drug and populate the detail page
 function populateDrugDetail(name, lang) {
-    let data = fetch("./assets/finalTest.csv")
+    let data = fetch("../assets/drugDetails.csv")
                 .then(response => response.text())
                 .then(data => {
                     // Now we have the data
@@ -29,12 +42,16 @@ function populateDrugDetail(name, lang) {
                     let categories = data[0]
                     let titles = data[1]
                     let info = null
-            
+
+                    // Names of drugs (for creating links)
+                    let names = []
+                    
                     // Loop through and find the relevant drug
                     for (let i = 2; i < data.length; i++) {
+                        names.push(data[i][0]);
+
                         if (data[i][0] == name) {
                             info = data[i]
-                            break;
                         }
                     }
 
@@ -50,7 +67,11 @@ function populateDrugDetail(name, lang) {
                     obj.innerHTML = ''
 
                     // Set title seperately
-                    document.getElementById("MEDICATION").textContent = info[0]
+                    let title = document.getElementById("title")
+                    title.innerHTML = info[0]
+
+                    
+                    //document.getElementById("MEDICATION").textContent = info[0]
 
                     // Then set individual parts
                     for (let i = 1; i < categories.length; i++) {
@@ -58,6 +79,9 @@ function populateDrugDetail(name, lang) {
                         if (info[i] == null || info[i].length == 0 || !categories[i].endsWith(lang)) {
                             continue
                         }
+
+                        // Insert links into text where applicable
+                        let txt_with_links = insertLinks(info[i], names, info[0])
 
                         // Otherwise, create div
                         let div = document.createElement('div')
@@ -70,7 +94,7 @@ function populateDrugDetail(name, lang) {
 
                         // Insert text
                         let text = document.createElement('p')
-                        text.textContent = info[i]
+                        text.innerHTML = txt_with_links
                         div.appendChild(text)
 
                         // Finally, write div
@@ -98,12 +122,20 @@ function parseCSV(data) {
             current = ""
         } else if (c == '\n' && !inQuote) {
             obj.push(row)
-            //console.log(row)
             row = []
             current = ""
         } else {
             current += c
         }
+    }
+
+    // Push anything left over
+    if (row != "") {
+        if (current != "") {
+            row.push(current)
+        }
+
+        obj.push(row)
     }
 
     return obj
